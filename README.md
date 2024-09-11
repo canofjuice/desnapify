@@ -1,7 +1,7 @@
 > [!WARNING]
 > I literally just wrote this script, so it's very, **VERY** new. There will be problems!!!
 # De-Snapify
-Simple zenity + Bash script for removing and disabling snaps and installing Firefox from Mozilla's PPA in Ubuntu.
+Simple zenity + bash script for removing and disabling snaps and installing extra software afterwards.
 
 Dead simple, made to work and not to look pretty.  
 Allows you to install Firefox, Chromium, Flatpak and AppImage after the removal.  
