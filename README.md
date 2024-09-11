@@ -4,7 +4,7 @@
 Simple zenity + Bash script for removing and disabling snaps and installing Firefox from Mozilla's PPA in Ubuntu.
 
 Dead simple, made to work and not to look pretty.  
-Might add an option to install Flatpak + GNOME Software in the future.  
+Allows you to install Firefox, Chromium, Flatpak and AppImage after the removal.  
 This was primarily made just for myself but feel free to use it.
 
 > [!IMPORTANT]  
@@ -33,5 +33,5 @@ or you can just simply download the script directly either with **wget** or [by 
 ```
 sudo apt update && sudo apt install wget
 wget https://raw.githubusercontent.com/canofjuice/desnapify/main/desnapify.sh
-sh desnapify.sh
+bash desnapify.sh
 ```
