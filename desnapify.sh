@@ -1,6 +1,4 @@
 #!/bin/bash
-if [[ $(readlink -f /proc/$(ps -o ppid:1= -p $$)/exe) != $(readlink -f "$SHELL") ]]
-then 
 zenity --info --title="Welcome to De-Snapify!" --text="<big>This script will automate the process of removing and disabling snaps, and replacing the snap version of Firefox with a local package version from Mozilla's PPA's.</big>" --width=600
 zenity --warning --text="<big>WARNING: Snaps are a important part of the Ubuntu (and all of it's flavors, except Lubuntu) experience.\n\nI am NOT responsible for any damage caused by the script or ANYTHING done by the script in general.\n\nUse this at your own risk.</big>" --title=De-Snapify --width=800
 zenity --question --text="<big>Proceed with removing snaps?</big>" --title=De-Snapify --width=400
@@ -37,7 +35,4 @@ sudo apt update && sudo apt install firefox -y
 zenity --info --title=De-Snapify --text="DONE! Snaps have been removed, disabled and the Mozilla PPA version of Firefox has been installed.\n\n Please restart or re-login and enjoy your snap-less Ubuntu experience!" --width=500
 else
 exit
-fi
-else
-zenity --error --title=De-Snapify --text="<big>Please run the script from a terminal in order to catch any errors that occur during the execution of the script.</big>"
 fi
