@@ -77,7 +77,7 @@ kdialog --yesno="Would you like to install Flatpak support (adds support to Disc
 if [ $? = 0 ] ; then
 install_flatpak ;
 fi
-kdialog --yesno="<big>Would you like to install AppImage support?</big>" --title=De-Snapify
+kdialog --yesno="Would you like to install AppImage support?" --title=De-Snapify
 if [ $? = 0 ] ; then
 install_appimage_support ;
 fi
@@ -85,7 +85,7 @@ kdialog --yesno="In case you did not choose to install a web browser, would you 
 if [ $? = 0 ] ; then
 echo "Making sure wget is installed"
 sudo apt update
-sudo apt install wget
+sudo apt install wget -y
 wget https://raw.githubusercontent.com/canofjuice/desnapify/main/browser_install_instructions.txt ~ ;
 fi
 kdialog --msgbox="DONE! Snaps have been removed and disabled from your system.\n\nPlease restart or re-login and enjoy your snap-less Ubuntu experience." --title=De-Snapify
