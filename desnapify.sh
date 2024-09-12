@@ -58,7 +58,7 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 sudo apt update 
-sudo apt install gdebi ;
+sudo apt install gdebi -y ;
 else
 zenity --warning --text="<big>Script aborted. Press OK to exit.</big>" --title=De-Snapify
 exit ;
@@ -83,7 +83,7 @@ zenity --question --text="<big>In case you did not choose to install a web brows
 if [ $? = 0 ] ; then
 echo "Making sure wget is installed"
 sudo apt update
-sudo apt install wget
+sudo apt install wget -y
 wget https://raw.githubusercontent.com/canofjuice/desnapify/main/browser_install_instructions.txt ~ ;
 fi
 zenity --info --title=De-Snapify --text="<big>DONE! Snaps have been removed and disabled from your system.\n\nPlease restart or re-login and enjoy your snap-less Ubuntu experience.</big>" --width=700
