@@ -1,14 +1,12 @@
-> [!WARNING]
-> I literally just wrote this script, so it's very, **VERY** new. There will be problems!!!
 # De-Snapify
 Simple zenity + bash script for removing and disabling snaps and installing extra software afterwards.
 
 Dead simple, made to work and not to look pretty.  
-Allows you to install Firefox, Chromium, Flatpak and AppImage after the removal.  
+Allows you to install Firefox, Chromium, Flatpak and AppImage support after the removal.  
 This was primarily made just for myself but feel free to use it.
 
 > [!IMPORTANT]  
-> This was only tested on Ubuntu and Kubuntu 24.04 LTS stock so far.
+> This was only tested on Ubuntu, Kubuntu 24.04 LTS and Ubuntu 24.10
 
 > [!CAUTION]
 > I am NOT responsible for any damage caused by this script. Snaps are a important part of Ubuntu's experience.
