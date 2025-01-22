@@ -43,6 +43,7 @@ zenity --info --title="Welcome to De-Snapify!" --text="<big>This script will aut
 zenity --warning --text="<big>WARNING: Snaps are a important part of the Ubuntu (and all of it's flavors, except Lubuntu) experience.\n\nI am NOT responsible for any damage caused by the script.\n\nUse this at your own risk.</big>" --title=De-Snapify --width=600
 zenity --question --text="<big>Proceed with removing snaps?</big>" --title=De-Snapify --width=400
 if [ $? = 0 ] ; then
+echo "Please wait..."
 sudo snap remove firefox
 sudo systemctl disable --now snapd
 sudo systemctl mask snapd
